@@ -11,6 +11,44 @@
 
 		<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="basic.css" type="text/css" />
+
+		<link rel="stylesheet" type="text/css"
+		      href="http://alohaeditor.org/builds/stable/alohaeditor-0.23.6/aloha/css/aloha.css">
+
+		<script>var Aloha={settings:{sidebar:{disabled:true}}};</script>
+
+		<script src="http://alohaeditor.org/builds/stable/alohaeditor-0.23.6/aloha/lib/aloha-full.min.js"
+		        data-aloha-plugins="common/ui,
+		                            common/format,
+		                            common/table,
+		                            common/list,
+		                            common/link,
+		                            common/highlighteditables,
+		                            common/undo,
+		                            common/contenthandler,
+		                            common/paste,
+		                            common/characterpicker,
+		                            common/commands,
+		                            common/block,
+		                            common/image,
+		                            common/abbr,
+		                            common/horizontalruler,
+		                            common/align,
+		                            common/dom-to-xhtml,
+		                            extra/textcolor,
+		                            extra/formatlesspaste,
+		                            extra/hints,
+		                            extra/toc,
+		                            extra/headerids,
+		                            extra/listenforcer,
+		                            extra/metaview,
+		                            extra/numerated-headers,
+		                            extra/ribbon,
+		                            extra/wai-lang,
+		                            extra/flag-icons,
+		                            extra/linkbrowser,
+		                            extra/imagebrowser,
+		                            extra/cite"></script>
 	</head>
 	<body>
 		<div class="page">
@@ -30,6 +68,17 @@
 						<div class="sub-lettering">
 							<div contentEditable="true">aloha editor &bull; barcamp 2013 </div>
 						</div>
+						<div style="text-align:center">
+							<a href="https://aloha-editor-barcamp.eventbrite.com/">
+								&ldquo;Alright already, and sign me up!&rdquo;
+								&nbsp;:)
+							</a>
+						</div>
+						<div style="text-align:center">
+							<a href="#scrollTo(info)">
+								&ldquo;I'ma skeptic...&rdquo;
+							</a>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -37,7 +86,7 @@
 			<section id="info" class="parallax ocean">
 				<div>
 					<div class="middle">
-						<p class="bigger">
+						<p class="bigger" contentEditable="true">
 							the <a href="http://www.aloha-editor.org">Aloha Editor</a> is an
 							<a href="http://github.com/alohaeditor/Aloha-Editor">Open Source</a>
 							project built around the idea of creating a rich-text content
@@ -107,7 +156,7 @@
 
 			<section id="location" class="parallax">
 			<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-			        xsrc="http://maps.google.com/maps?ll=48.216800,16.37065&amp;spn=0.007063,0.015986&amp;cid=408223738660821454&amp;output=embed"></iframe>
+			        src="http://maps.google.com/maps?ll=48.216800,16.37065&amp;spn=0.007063,0.015986&amp;cid=408223738660821454&amp;output=embed"></iframe>
 			</section>
 
 			<footer id="end" class="parallax">
@@ -119,7 +168,7 @@
 						<div class="sub-lettering bigger tomato">
 							editor
 						</div>
-						<div id="tagline" class="scrolling-bg clipped-text" contentEditable="true">
+						<div id="tagline" class="scrolling-bg clipped-text show-highlight" contentEditable="true">
 							&ldquo; the <b style="border-bottom: 10px solid #fff">shape</b> of things to come &rdquo;
 						</div>
 					</div>
@@ -130,7 +179,7 @@
 		<script src="transformer/vendor/jquery.js"></script>
 		<script src="transformer/math.js"></script>
 		<script src="transformer/transformer.js"></script>
-
+		<script src="parallax-deck/parallax-deck.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>
